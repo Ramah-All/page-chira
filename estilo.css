@@ -128,7 +128,6 @@ h2{
     line-height: 25px;
 }
 /* SECCION INFO */
-/*
 .info{
     position: relative;
 }
@@ -144,8 +143,8 @@ h2{
     top: 50%;
     right: 100px;
     transform: translateY(-50%);
-}*/
-.info{
+}
+/*.info{
     display:flex;
     align-items:center;
     gap:40px;
@@ -162,7 +161,7 @@ h2{
     right:auto;
     top:auto;
     transform:none;
-}
+}*/
 
 .info .texto p{
     margin: 10px 0;
