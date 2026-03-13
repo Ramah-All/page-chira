@@ -57,7 +57,7 @@ body{
 .titulo{
     font-family: 'Finger Paint';
     text-align: center;
-    font-size: 12rem;
+    font-size: clamp(3rem, 10vw, 12rem); /* font-size: 12rem;*/
     color: #334755;
     position: relative;
 }
@@ -82,6 +82,7 @@ h2{
     line-height: 35px;
     font-size: 20px;
 }
+/*
 .tours .fila{
     display: flex;
     margin-top: 30px;
@@ -89,6 +90,16 @@ h2{
 }
 .tours .fila .col{
     width: 30%;
+*/
+.tours .fila{
+    display:flex;
+    gap:20px;
+    flex-wrap:wrap;
+}
+
+.tours .fila .col{
+    flex:1 1 300px;
+}
 
 }
 .tours .fila i{
@@ -103,6 +114,7 @@ h2{
     line-height: 25px;
 }
 /* SECCION INFO */
+/*
 .info{
     position: relative;
 }
@@ -118,7 +130,26 @@ h2{
     top: 50%;
     right: 100px;
     transform: translateY(-50%);
+}*/
+.info{
+    display:flex;
+    align-items:center;
+    gap:40px;
+    flex-wrap:wrap;
+    padding:40px;
 }
+
+.info img{
+    width:60%;
+}
+
+.info .texto{
+    position:relative;
+    right:auto;
+    top:auto;
+    transform:none;
+}
+
 .info .texto p{
     margin: 10px 0;
     color: #666;
@@ -137,15 +168,22 @@ h2{
     cursor: pointer;
 }
 /* SECCION DESCUBRIR */
-.descubrir .contenido-seccion{
+/*.descubrir .contenido-seccion{
     position: relative;
     width: 100%;
     bottom:  150px;
+}*/
+.descubrir .contenido-seccion{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    gap:30px;
 }
+
 .descubrir .contenido-seccion img{
     width: 100%;
 }
-.descubrir .contenido-seccion .info{
+/*.descubrir .contenido-seccion .info{
     position: absolute;
     text-align: center;
     top: 0;
@@ -153,7 +191,13 @@ h2{
     left: 50%;
     transform: translateX(-50%);
     padding-top: 150px;
+}*/
+.descubrir .contenido-seccion .info{
+    position:relative;
+    transform:none;
+    padding:20px;
 }
+
 .descubrir .contenido-seccion .info p{
     color: #666;
     font-size: 18px;
@@ -252,6 +296,25 @@ h2{
 }
 
 
+/*redes*/
+.redes{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:20px;
+}
+
+.redes a{
+    font-size:35px;
+}
+
+
+/*wapp*/
+.subscribase input{
+    max-width:90%;
+    width:400px;
+}
+
 /*------------------------------------------------------------*/
 .whatsapp-box{
     display: inline-block;
@@ -268,4 +331,70 @@ h2{
 .whatsapp-box:hover{
     background-color: #25D366;
     color: white;
+}
+
+/*responsive*/
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+img{
+    max-width:100%;
+    height:auto;
+}
+
+
+
+
+/*mas importante*/
+@media (max-width:768px){
+
+.inicio{
+    height:auto;
+}
+
+.inicio .contenido-seccion header{
+    padding:20px;
+}
+
+.tours{
+    margin-top:40px;
+    padding:20px;
+}
+
+.tours > p{
+    font-size:16px;
+    line-height:28px;
+}
+
+.info{
+    flex-direction:column;
+    text-align:center;
+}
+
+.info img{
+    width:100%;
+}
+
+.info .texto{
+    max-width:100%;
+}
+
+.descubrir .contenido-seccion{
+    bottom:0;
+}
+
+.esahora{
+    height:auto;
+    padding:60px 20px;
+}
+
+.whatsapp-box{
+    font-size:16px;
+    padding:10px 15px;
+}
+
 }
