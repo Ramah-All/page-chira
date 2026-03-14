@@ -120,7 +120,7 @@ h2{
     display:flex;
     /*gap:20px;
     flex-wrap:wrap;*/
-    margin-top: 50px; /* espacio entre el texto y las columnas */
+    margin-top: 80px; /* espacio entre el texto y las columnas */
     justify-content: space-between;
 }
 
