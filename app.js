@@ -31,6 +31,14 @@ $(window).on('scroll',function(){
   });
 
 
+   //efecto5
+  var scrolled = $(this).scrollTop();
+  $('.efecto5').css({
+    'transform':'translate3d(0, ' + (scrolled * .10) + 'px,0)',
+    'opacity':1 - scrolled / 400
+  });
+
+  
 
 })
 
