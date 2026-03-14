@@ -77,6 +77,15 @@ body{
     color: #334755;
     position: relative;
 }
+
+.tituloz{
+    font-family: 'Finger Paint';
+    text-align: center;
+    font-size: clamp(1rem, 5vw, 6rem); /* font-size: 12rem;*/
+    color: #334755;
+    position: relative;
+}
+
 /* SECCION TOURS */
 .tours{
     text-align: center;
