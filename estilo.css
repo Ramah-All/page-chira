@@ -118,8 +118,10 @@ h2{
 */
 .tours .fila{
     display:flex;
-    gap:20px;
-    flex-wrap:wrap;
+    /*gap:20px;
+    flex-wrap:wrap;*/
+    margin-top: 50px; /* espacio entre el texto y las columnas */
+    justify-content: space-between;
 }
 
 .tours .fila .col{
