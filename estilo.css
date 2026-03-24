@@ -172,6 +172,7 @@ h2{
     right: 100px;
     transform: translateY(-50%);
     border-radius: 20px;
+    text-align: center;
 }
 /*.info{
     display:flex;
