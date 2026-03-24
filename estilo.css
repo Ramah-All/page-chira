@@ -81,7 +81,8 @@ body{
     font-size: clamp(3rem, 10vw, 12rem); /* font-size: 12rem;*/
     color: #334755;
     position: relative;
-    z-index: 20; /*  */
+    z-index: 20; /* delante de imagen */
+    -webkit-text-stroke: 1px white; /* BORDE BLANCO */
 }
 
 .tituloz{
@@ -90,7 +91,8 @@ body{
     font-size: clamp(1rem, 5vw, 6rem); /* font-size: 12rem;*/
     color: #334755;
     position: relative;
-    z-index: 20; /*  */
+    z-index: 20; /* delante de la imagen */
+    -webkit-text-stroke: 0.5px white; /* más delgado */
 }
 
 /* SECCION TOURS */
