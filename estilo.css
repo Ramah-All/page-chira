@@ -48,6 +48,11 @@ body{
 .inicio .contenido-seccion{
     max-width: 1200px;
     margin: auto;
+    /**/
+    position: relative;
+    z-index: 20;
+    /**/
+    
 }
 .inicio .contenido-seccion header{
     padding: 50px 20px;
@@ -76,6 +81,7 @@ body{
     font-size: clamp(3rem, 10vw, 12rem); /* font-size: 12rem;*/
     color: #334755;
     position: relative;
+    z-index: 20; /*  */
 }
 
 .tituloz{
@@ -84,6 +90,7 @@ body{
     font-size: clamp(1rem, 5vw, 6rem); /* font-size: 12rem;*/
     color: #334755;
     position: relative;
+    z-index: 20; /*  */
 }
 
 /* SECCION TOURS */
