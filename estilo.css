@@ -224,7 +224,9 @@ h2{
 }
 
 .descubrir .contenido-seccion img{
-    width: 100%;
+    /*width: 100%;*/
+    max-width: 800px;
+    border-radius: 20px;
 }
 /*.descubrir .contenido-seccion .info{
     position: absolute;
@@ -239,6 +241,8 @@ h2{
     position:relative;
     transform:none;
     padding:20px;
+    text-align: center; /* CLAVE */
+    max-width: 800px;   /* opcional para que se vea más ordenado */
 }
 
 .descubrir .contenido-seccion .info p{
