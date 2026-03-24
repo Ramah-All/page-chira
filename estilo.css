@@ -104,6 +104,7 @@ body{
     background: #fff;
     margin-top: 100px;
     z-index: 100;
+    position: relative;/* */
 }
 h2{
     color: #334755;
@@ -158,6 +159,7 @@ h2{
 /* SECCION INFO */
 .info{
     position: relative;
+    z-index: 1;/* */
 }
 .info img{
     width: 70%;
