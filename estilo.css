@@ -82,7 +82,7 @@ body{
     color: #334755;
     position: relative;
     z-index: 20; /* delante de imagen */
-    -webkit-text-stroke: 1px white; /* BORDE BLANCO */
+    -webkit-text-stroke: 0.5px white; /* BORDE BLANCO */
     text-shadow: 
         -1px -1px 0 white,
          1px -1px 0 white,
@@ -131,15 +131,20 @@ h2{
     width: 30%;
 */
 .tours .fila{
+    
     display:flex;
+    flex-wrap: wrap; /* 🔥 CLAVE */
     /*gap:20px;
     flex-wrap:wrap;*/
     margin-top: 80px; /* espacio entre el texto y las columnas */
-    justify-content: space-between;
+    justify-content: center; /* centrado bonito */
+    gap: 20px; /* espacio entre columnas */
+    /*justify-content: space-between;*/
 }
 
 .tours .fila .col{
-    flex:1 1 300px;
+    /*flex:1 1 300px;*/
+    flex: 0 0 calc(33.33% - 20px); /*  3 por fila */
 }
 
 }
@@ -386,6 +391,10 @@ h2{
 
 /*mas importante*/
 @media (max-width:768px){
+
+.tours .fila .col{
+    flex: 0 0 100%; /* 1 por fila */
+}
 
 .inicio{
     height:auto;
