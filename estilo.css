@@ -83,6 +83,11 @@ body{
     position: relative;
     z-index: 20; /* delante de imagen */
     -webkit-text-stroke: 1px white; /* BORDE BLANCO */
+    text-shadow: 
+        -1px -1px 0 white,
+         1px -1px 0 white,
+        -1px  1px 0 white,
+         1px  1px 0 white;
 }
 
 .tituloz{
