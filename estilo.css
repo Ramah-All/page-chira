@@ -309,6 +309,12 @@ h2{
     height: 100vh;
     /*aaa*/
     position: relative;
+    z-index: 1;
+    
+.box-contacto{
+    position: relative;
+    z-index: 100;
+}
 }
 .esahora .redes{
     text-align: center;
