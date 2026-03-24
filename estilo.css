@@ -307,6 +307,8 @@ h2{
     background: url(img/esahora.png);
     background-size: cover;
     height: 100vh;
+    /*aaa*/
+    position: relative;
 }
 .esahora .redes{
     text-align: center;
